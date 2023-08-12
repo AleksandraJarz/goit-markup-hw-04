@@ -18,6 +18,9 @@ body {
   --button-shadow: rgba(0, 0, 0, 0.15);
   --active-icon: #31d0aa;
   --light-slate: #8e8f99;
+  --portfolio-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
+    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+    0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
 .logo {
   font-family: Raleway;
@@ -280,6 +283,13 @@ footer {
   line-height: 1.5;
   letter-spacing: 0.32px;
   margin: 0;
+}
+.project-card {
+  display: block;
+}
+.project-card:focus,
+.project-card:hover {
+  box-shadow: var(--portfolio-shadow);
 }
 
 .container {
