@@ -15,6 +15,8 @@ body {
   --link-active: #404bbf;
   --accent: #e7e9fc;
   --button-shadow: rgba(0, 0, 0, 0.15);
+  --active-icon: #31d0aa;
+  --light-slate: #8e8f99;
 }
 .logo {
   font-family: Raleway;
@@ -139,6 +141,14 @@ body {
   margin: 0;
 }
 
+.spec-list {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
 .spec {
   font-size: 36px;
   font-style: normal;
@@ -152,25 +162,15 @@ body {
   padding-bottom: 72px;
   margin: 0px;
 }
-.spec-list {
-  display: flex;
-  gap: 24px;
-  justify-content: center;
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-}
-
-.team-header {
+.section-header {
   color: var(--dark);
   text-align: center;
   font-size: 36px;
   font-weight: 700;
-  line-height: 2.5;
+  line-height: 1.11;
   letter-spacing: 0.72px;
   text-transform: capitalize;
   padding-bottom: 72px;
-  margin: 0;
 }
 footer {
   background-color: var(--dark);
@@ -252,6 +252,10 @@ footer {
   background: var(--white, #fff);
   box-shadow: 0px 2px 1px 0px;
 }
+.footer-background {
+  background: var(--dark);
+  padding: 100px 0px;
+}
 
 .list-project {
   list-style-type: none;
@@ -326,4 +330,76 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.social-icon {
+  display: flex;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--primary-brand);
+}
+.social-icon-team {
+  display: flex;
+  gap: 24px;
+  margin-top: 8px;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+}
+.social-icon:hover,
+.social-icon:focus {
+  background-color: var(--link-active);
+}
+.footer-wrapper {
+  display: flex;
+}
+.footer-social {
+  margin-left: 120px;
+}
+.footer-social-title {
+  color: var(--white);
+  font-weight: 500;
+}
+.footer-social-icon {
+  display: flex;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--primary-brand);
+}
+.social-icons-footer {
+  display: flex;
+  gap: 16px;
+  margin-top: 16px;
+  justify-content: center;
+  list-style-type: none;
+}
+.footer-social-icon:hover,
+.footer-social-icon:focus {
+  background-color: var(--active-icon);
+}
+.customers {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  list-style-type: none;
+}
+.customers-icons {
+  border: 1px solid var(--light-slate);
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 168px;
+  height: 88px;
+  fill: var(--light-slate);
+}
+.customers-icons:hover,
+.customers-icons:focus {
+  border-color: var(--link-active);
+  fill: var(--link-active);
 }
